@@ -484,7 +484,7 @@ preloader
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #0e4c92!important;
@@ -606,7 +606,7 @@ preloader
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
@@ -687,37 +687,165 @@ banner
   color: #ed563b;
   font-weight: 900;
 }
+/*Bannner Ends*/
 
+
+/*Why us begins*/
+.us-heading{
+  margin-top: 80px;
+  color: #212529;
+  margin-left: 50px;
+}
+.wrapper{
+  padding: 20px 50px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+.wrapper .why-us-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.wrapper .why-us-wrapper .why-us{
+  height: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.why-us .icon{
+  height: 90px;
+  width: 10%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 4px #0e4c92;
+  box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.icon i{
+  align-self: center;
+  font-size: 2.5rem;
+  color: #0e4c92;
+
+}
+.why-us .txt{
+  width: 80%;
+  height: 90px;
+  text-align: left;
+}
+.why-us .txt h4{
+  color: #0e4c92;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+}
+.why-us .txt p{
+  color: #212529;
+  line-height: 1.5;
+}
+
+.wrapper .img{
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.img img{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 767px) {
+  .wrapper{
+    display: inline-block;
+  }
+  .wrapper .why-us-wrapper .why-us {
+    height: 180px;
+}
+.why-us .icon {
+  height: 90px;
+  width: 30%;
+}
+ .why-us .icon i {
+    font-size: 2rem;
+}
+  .img {
+   display: none;
+   width: 0%;
+  }
+  .wrapper .why-us-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .us-heading {
+    margin-top: 80px;
+    margin-left: 50px;
+  }
+
+  .wrapper {
+    gap: 30px;
+  }
+}
+
+
+
+
+/*Courses Begin*/
+.courses-wrapper{
+  margin: 80px 0;
+  padding: 20px 50px;
+  width: 100%;
+}
 .other1 h2{
-  color: #ed563b;
+  color: #0e4c92;
   font-size: 42px;
   text-align: center;
-  margin-top: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight:bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:700;
+  font-style: italic;
 }
 .other1 p{
-  font-size: 13px;
-  margin-left: 200px;
-  margin-right: 200px;
-  color: rgb(162, 169, 169);
+  font-size: 1rem;
+  margin: 0 200px;
+  color: #212529;
   text-align: center;
-  margin-top: 30px;
 }
- .other1{
+ 
+.other1{
   text-align: center;
   margin-top: 20px;
  }
- .other1 img{
- margin-top: 20px;
- }
-
-
+ 
  
  /* Card Aspect */
-
-
-
 article {
   --img-scale: 1.001;
   --title-color: black;
@@ -726,7 +854,14 @@ article {
   position: relative;
    border-radius: 10px;
   box-shadow: none;
-  background: #9f9c9ccd;
+  background: #f8f9fa;
+  box-shadow:
+      0 1px 1px hsl(0deg 0% 0% / 0.075),
+      0 2px 2px hsl(0deg 0% 0% / 0.075),
+      0 4px 4px hsl(0deg 0% 0% / 0.075),
+      0 8px 8px hsl(0deg 0% 0% / 0.075),
+      0 16px 16px hsl(0deg 0% 0% / 0.075)
+    ;
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -817,7 +952,7 @@ Generic layout (demo looks)
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 960px) {
@@ -829,7 +964,7 @@ Generic layout (demo looks)
   }
 }
 
-@container card (min-width: 380px) {
+@media screen and (max-width: 767px) {
   .article-wrapper {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -848,6 +983,28 @@ Generic layout (demo looks)
     aspect-ratio: 1;
     object-fit: cover;
   }
+  .courses-wrapper .other1{
+    margin: 0;
+  }
+
+  .other1 h2 {
+    font-size: 30px;
+    font-style: normal;
+}
+.other1 p {
+  margin: 0;
+  color: #212529;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000%;
+  margin-inline: auto;
+  padding-inline: 10px;
+  gap: 24px;
+  margin-top: 30px;
+}
 }
 
 .sr-only:not(:focus):not(:active) {
@@ -862,13 +1019,6 @@ Generic layout (demo looks)
 
 
 /* Message Box  */
-
-
- 
-
- 
-
- 
 form {
   background: #b9b4b4;
   padding: 4em 4em 2em;
@@ -915,21 +1065,17 @@ form {
     margin-top: 2px;
     border-radius: 2px;
     font-weight: lighter;
-
   }
   input[type="text"]:focus,
   input[type="password"]:focus {
     background: #fff;
     font-weight: lighter;
     margin-top: 2px;
-
-
   }
  
  
   .main-banner .side-image{
     margin-top: 50px;
-
   }
  
 
@@ -937,17 +1083,5 @@ form {
     height: 550px;
     margin-top: 90px;
     z-index: -99;
-     
-
+  
   }
-
-  
-.new-image img{
-  
-  width: 650px;
-  height: 450px;
-  position: absolute;
-  top: 265%;
-  left: 8%;
-
-}
