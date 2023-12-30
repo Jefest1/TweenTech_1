@@ -8,11 +8,6 @@
     outline: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-
-
-
-    
-
   }
 
 
@@ -78,7 +73,7 @@ ul {
 
 html, body {
     font-weight: 700;
-    background-color: #fff;
+    background-color: #f8f9fa;
     font-size: 1rem;
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -693,7 +688,7 @@ banner
 .service-wrapper{
   width: 100%;
   padding: 20px 50px;
-  margin: 60px 80px;
+  margin: 60px 50px 60px 100px;
   font-family: 'Open-Sans', sans-serif;
   display: flex;
   flex-direction: column;
@@ -710,7 +705,7 @@ banner
   justify-content: center;
   gap: 30px;
   width: 100%;
-  margin-top: 30px;
+  margin: 30px 0px 0px 80px;
 }
 
 .service-wrapper .container .service{
@@ -726,6 +721,12 @@ banner
   height: 300px;
   width: 200px;
   gap: 30px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-wrapper .container .service:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .service-wrapper .container .service i{
@@ -751,6 +752,7 @@ banner
 
   .service-wrapper .container {
     flex-direction: column;
+    margin: 30px 0px 0px 0px;
   }
 }
 
@@ -793,6 +795,7 @@ banner
   align-items: center;
   display: flex;
   justify-content: center;
+  border-top: 1px solid #0e4c92;
   border: 4px #0e4c92;
   box-shadow:
       0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -1195,7 +1198,7 @@ ul > li {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .footer-start {
@@ -1215,6 +1218,7 @@ ul > li {
     left: 0;
     right: 0;
     top: -150px;
+    margin-bottom: 30px;
 }
 .footer .inner {
     display: flex;
