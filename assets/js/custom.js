@@ -123,3 +123,17 @@
 
 
 })(window.jQuery);
+
+// animations
+$(window).scroll(function() {
+    $('.animated').each(function() {
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        var scrollTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scrollTop + windowHeight > offset && scrollTop < offset + height) {
+            $(this).addClass('visible');
+        }
+    });
+});
