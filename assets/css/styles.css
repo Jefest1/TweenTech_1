@@ -250,6 +250,7 @@ preloader
 
 .header-area .main-nav {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -258,10 +259,13 @@ preloader
 }
 
 .header-area .main-nav .logo {
-  display: inline;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  margin-top: -10px;
   width: 200px;
   height: 100px;
+
 }
 
 .header-area .main-nav .logo .logo-img{
@@ -486,7 +490,7 @@ preloader
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
     color: #0e4c92!important;
@@ -785,6 +789,7 @@ banner
 }
 .wrapper .why-us-wrapper{
   height: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -825,7 +830,7 @@ banner
 }
 .why-us .txt{
   width: 80%;
-  height: 90px;
+  height: 120px;
   text-align: left;
 }
 .why-us .txt h4{
@@ -861,7 +866,8 @@ banner
     display: inline-block;
   }
   .wrapper .why-us-wrapper .why-us {
-    height: 180px;
+    height: 300px;
+    text-align: justify;
 }
 .why-us .icon {
   height: 90px;
@@ -880,10 +886,13 @@ banner
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     align-items: flex-start;
 }
 
+.wrapper .why-us-wrapper:last-of-type{
+  margin-top: 50px;
+}
 
 }
 
@@ -1437,6 +1446,10 @@ h3.section-sub-title strong {
   line-height: 1.5;
 }
 
+.about-wrapper .text-p h4{
+  margin-top:25px;
+}
+
 
 .about-wrapper .img-p{
   width: 50%;
@@ -1607,6 +1620,10 @@ h3.section-sub-title strong {
     .members h4{
     font-size: 1.5rem;
   }
+
+.members{
+  margin-top: 120px;
+}
 }
 
 .chat-button{
