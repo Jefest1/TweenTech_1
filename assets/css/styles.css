@@ -1582,6 +1582,34 @@ h3.section-sub-title strong {
 
 
 /*Courses Page Begin here*/
+.course-description{
+  padding: 30px 40px;
+  margin: 30px 40px;
+}
+
+.course-description .description{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 40px 60px;
+  margin: 10px 100px;
+}
+
+.course-description .description h4{
+  margin-bottom: 30px;
+  font-family: 'Open Sans',serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.course-description .description p{
+  font-family: 'Open Sans',serif;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
 
 CSS.mb-6 {
   margin-bottom: 4.5rem !important;
