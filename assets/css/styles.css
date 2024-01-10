@@ -265,6 +265,7 @@ preloader
   margin-top: -10px;
   width: 200px;
   height: 100px;
+  border-radius: 20px;
 
 }
 
@@ -1602,7 +1603,7 @@ h3.section-sub-title strong {
   margin-bottom: 30px;
   font-family: 'Open Sans',serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .course-description .description p{
@@ -1705,6 +1706,10 @@ CSS.mb-6 {
       text-align: left;
       padding: 20px 20px; 
       margin: 10px 0px; 
+  }
+
+  .course-description .description h4{
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 768px) {
@@ -1885,4 +1890,132 @@ CSS.mb-6 {
 }
 .hcf-transform:hover {
   transform: scale3d(1.02, 1.02, 1.02);
+}
+
+
+/* Styling for the program section */
+.program-infos{
+  font-family: 'Open Sans', sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.program-infos .program-info {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* Individual block styling */
+.info-block {
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Icon styles using font-awesome */
+.info-block i {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* Subtitle styles */
+.info-block h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Paragraph text styles */
+.info-block p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Styling for the data scientist section */
+section.data-scientist {
+  border-top: 2px solid #333;
+  padding-top: 30px;
+}
+
+/* Header styles */
+.data-scientist h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Paragraph text styles */
+.data-scientist p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Unordered list styles */
+.data-scientist ul {
+  list-style-type: none;
+}
+
+.data-scientist ul li {
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.program-infos h4{
+  margin: 0 0 30px 35px;
+  font-family: 'Open Sans',serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .program-infos {
+    text-align: center;
+    margin: 10px 10px; 
+  }
+
+  .program-infos .program-info {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .info-block {
+    width: 100%;
+    max-width: 340px; 
+    margin-bottom: 20px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  }
+
+  
+  .info-block i {
+    font-size: 40px; 
+  }
+
+  /* Adjust the subtitle for smaller screens */
+  .info-block h2 {
+    font-size: 18px; 
+  }
+
+  
+  .info-block p {
+    font-size: 14px; 
+  }
+  
+  /* Center the title on smaller screens */
+  .program-infos h4 {
+    text-align: left;
+    margin: 0 0 20px 5px;
+    font-size: 1.5rem;
+  }
 }
