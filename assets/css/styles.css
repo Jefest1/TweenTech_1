@@ -863,8 +863,15 @@ banner
 
 /* Responsive styles using media queries */
 @media screen and (max-width: 767px) {
+
+    .us-heading {
+      margin: 80px 0 20px 50px;
+  }
   .wrapper{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   padding: 10px;
   }
   .wrapper .why-us-wrapper .why-us {
     height: 300px;
@@ -887,7 +894,7 @@ banner
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: flex-start;
 }
 
@@ -1060,13 +1067,24 @@ Generic layout (demo looks)
 }
 
 @media screen and (max-width: 767px) {
+    article {
+      width: 250px;
+      height: 300px;
+      margin-left: -10px;
+  }
   .article-wrapper {
     display: grid;
     grid-template-rows: 100px 1fr;
+    width: 100%;
     gap: 16px;
   }
   .article-body {
-    padding-left: 0;
+    margin: 30px 0 0 20px;
+    padding: 10px;
+  }
+
+    article h2 {
+      font-size: 1.3rem;
   }
   figure {
     width: 100%;
@@ -1079,7 +1097,7 @@ Generic layout (demo looks)
     align-items: center;
     text-decoration: none;
     color: #28666e;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
   figure img {
@@ -2017,5 +2035,137 @@ section.data-scientist {
     text-align: left;
     margin: 0 0 20px 5px;
     font-size: 1.5rem;
+  }
+}
+
+
+.how-you-learn {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.how-you-learn h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.learning-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.method {
+  width: 40%; 
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.method i {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.method h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.method p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .method {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 20px;
+    width: 100%; 
+  }
+  .method .learning-methods{
+    margin-bottom: 0px;
+  }
+  .method i{
+    margin-top: 10;
+    font-size: 1.5rem;
+  }
+}
+
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  width: 50%;
+  margin: 0 0 30px 200px;
+  padding: 20px;
+  transition: border-left 0.3s ease;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p, .section ul {
+  margin-bottom: 10px;
+}
+
+.section ul {
+  list-style: square;
+  font-weight: 500;
+  padding: 0;
+}
+
+.section ul li {
+  cursor: pointer; 
+  transition: padding-left 0.3s ease;
+}
+
+
+/* Responsive design */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    padding: 15px;
+    margin: 0 0 0px 10px;
+    border-left: 3px solid #333;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p, .section ul {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-left: 2px solid #333;
+  }
+
+  .section h2 {
+    font-size: 1.25rem;
+  }
+
+  .section p, .section ul {
+    font-size: 0.8rem;
   }
 }
